@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarel Tours</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="opening-scene">
+<header>
+    <!-- navbar -->
+<section class="navbar-top">
+<img class="sarel-logo" src="https://sarel.cdn.prismic.io/sarel/813ae43a-512d-485c-a83d-54e5312de94c_Tourslogo-whitegold.svg" alt="">
+<nav class="navbar">
+<ul class="navbar-links">
+<li><a href="/">HOME</a></li>
+<li><a href="/about">ABOUT</a></li>
+<li><a href="/services">SERVICES</a></li>
+<li><a href="/stories">STORIES</a></li>
+<li><a class="contact-us" href="/contact-us">CONTACT US</a></li>
+</ul>
+</nav>
+</section>
+    <!-- navbar ends -->
+</header>
+<video class="sarel-video" src="https://prismic-io.s3.amazonaws.com/sarel/b4368447-e4fb-4538-b68b-8e3cb19d2426_Sar-El+Hero+Video.mp4" autoplay muted loop></video>
+<div class="banner-container">
+<div class="banner">
+<p>Your life-changing journey</p>
+<p>in <span>Israel</span> begins here</p>
+<div class="banner-text">
+    <p>Serving churches and Christian ministries around</p>
+    <p>the world with the finest travel agents and</p>
+    <p>customized tours to Israel since 1993.</p>
+</div>
+<div class="banner-button">
+    <button id="startYourJourney">START YOUR JOURNEY</button>
+    <button id="getAtaste">GET A TASTE</button>
+</div>
+</div>
+</div>
+<div id="journeyModal" class="journey-modal">
+    <div class="journey-modal-content">
+        <span id="journeyClose" class="close journeyClose">&times;</span>
+        <div class="form">
+            <form action="/" method="POST">
+                <div class="form-intro">
+                <p>Contact Form</p>
+                <p>Some details so we can easily get in touch with you and</p>
+                <p>connect you to the right agent or Sar-El representative.</p>
+                </div>
+                <br>
+                <div class="form-whoami">
+                <p>I'm a:</p>
+                <div class="input-label">
+                    <input id="tourAgent" type="radio" name="whoami">
+                    <label for="tourAgent">Tour Agent</label>
+                </div>
+                <div class="input-label">
+                    <input id="tourLeader" type="radio" name="whoami">
+                    <label for="tourLeader">Tour Leader</label>
+                </div>
+                <div class="input-label">
+                    <input id="individualTraveler" type="radio" name="whoami">
+                    <label for="individualTraveler">Individual Traveler</label>
+                </div>
+                <div class="input-label">
+                    <input id="other" type="radio" name="whoami">
+                    <label for="other">Other</label>
+                </div>
+                </div>
+                <div class="form-first-time">
+                <br>
+                <p>Have you traveled with us before?</p>
+                <div class="input-label">
+                    <input id="traveledYes" type="radio" name="firstTime">
+                    <label for="traveledYes">Yes</label>
+                </div>
+                <div class="input-label">
+                    <input id="traveledNo" type="radio" name="firstTime">
+                    <label for="traveledNo">No</label>
+                </div>
+                </div>
+            </form>
+            <div class="journey-modal-buttons">
+                <button class="journeyClose" id="jModalCancel">CANCEL</button>
+                <button id="jModalNext">NEXT</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="tasteModal" class="taste-modal">
+    <div class="taste-modal-content">
+        <span id="tasteClose" class="close">&times;</span>
+        <div class="taste-video">
+            <iframe src="https://www.youtube.com/embed/42ZQNCDhsnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+</div>
+<!-- youtube: https://www.youtube.com/watch?v=42ZQNCDhsnA width="660" height="415"-->
+<script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "sarel-tours",
+  "version": "1.0.0",
+  "description": "Sarel Tours landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JedBh/sarel-tours.git"
+  },
+  "author": "Jed Benhod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JedBh/sarel-tours/issues"
+  },
+  "homepage": "https://github.com/JedBh/sarel-tours#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "uuid": "^8.3.2"
+  }
+}
