@@ -7,13 +7,20 @@ const journeyClose = document.querySelectorAll(".journeyClose");
 const tasteModal = document.querySelector("#tasteModal");
 const tasteBtn = document.querySelector("#getAtaste");
 const tasteClose = document.querySelector("#tasteClose");
+const sarelLogo = document.querySelector(".sarel-logo");
+const navbarLinks = document.querySelector(".navbar-links");
 
 window.addEventListener("scroll", (scroll) => {
   let scrollVal = window.scrollY;
   if (scrollVal > 150) {
-    navBarTop.style.background = "#000c68";
+    // navBarTop.style.background = "#000c68";
+    navBarTop.classList.add("navbar-top-scroll");
+    sarelLogo.classList.add("sarel-logo-scroll");
+    navbarLinks.classList.add("navbar-links-scroll");
   } else {
-    navBarTop.style.background = "none";
+    navBarTop.classList.remove("navbar-top-scroll");
+    sarelLogo.classList.remove("sarel-logo-scroll");
+    navbarLinks.classList.remove("navbar-links-scroll");
   }
 });
 
